@@ -1,0 +1,382 @@
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.main{
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.choose-lineup{
+  width: 30%;
+  border-right: 1px solid black;
+  background: #f2f2f2;
+}
+
+.lineup-display{
+  background-color: white;
+  width: 70%;
+  height: 95vh;
+  position: relative;
+}
+
+.lineup-row{
+  height: 60px;
+}
+
+.highlight:hover{
+  background-color: cyan;
+}
+
+.accept-button{
+  background-color: #0099ff;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 25%;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+
+.hide{
+  display:none;
+}
+
+/*players*/
+/*
+.player{
+  background-color: #1c1eb0;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+.player1-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 35%;
+}
+
+.player2-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 55%;
+}
+
+.player3-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.player4-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.player5-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+}
+
+.player6-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 65%;
+}
+
+.player7-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+}
+
+.player8-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.player9-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+
+.player10-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 75%;
+}
+
+.player11-3-5-2{
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+
+
+
+.player1-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 45%;
+}
+
+.player2-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.player3-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 5%;
+  left: 85%;
+}
+
+.player4-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.player5-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  left: 75%;
+}
+
+.player6-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+}
+
+.player7-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.player8-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+}
+
+.player9-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+}
+
+.player10-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+}
+
+.player11-4-3-3{
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+
+
+
+
+.player1-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 35%;
+}
+
+.player2-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 55%;
+}
+
+.player3-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.player4-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+
+.player5-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+
+.player6-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+}
+
+.player7-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.player8-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+}
+
+.player9-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 55%;
+}
+
+.player10-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+}
+
+.player11-4-4-2{
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}
+
+
+
+
+
+.player1-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 1%;
+  left: 45%;
+}
+
+.player2-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+}
+
+.player3-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+
+.player4-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 60%;
+}
+
+.player5-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 20%;
+  left: 85%;
+}
+
+.player6-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 5%;
+}
+
+.player7-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 25%;
+}
+
+.player8-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 45%;
+}
+
+.player9-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 65%;
+  left: 65%;
+}
+
+.player10-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 85%;
+}
+
+.player11-5-4-1{
+  display: inline-block;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+}*/
