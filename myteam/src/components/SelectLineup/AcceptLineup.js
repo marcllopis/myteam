@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../App.css';
 
 
 class AcceptLineup extends Component {
@@ -7,7 +7,7 @@ class AcceptLineup extends Component {
   render() {
     return (
       <div>
-        <div className="accept-button">
+        <div className="accept-button" onClick={function(){this.props.acceptLineup()}.bind(this)}>
           Accept!
         </div>
       </div>

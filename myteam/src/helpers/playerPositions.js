@@ -4,10 +4,11 @@ import styled, { css } from 'styled-components';
 
 
 const BasicPlayer = styled.div`
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
+  background-image: url("https://static.wefut.com/assets/images/fut16/gold5.png?176")!important;
+  background-size: 80px 110px;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 110px;
   border-radius: 10px;
   position: absolute;
 }`
@@ -247,7 +248,7 @@ const Player10 = BasicPlayer.extend`
 
 // GOALKEEPER
 
-const GoalKeeper = BasicPlayer.extend`
+const Player11 = BasicPlayer.extend`
   display: ${props => props.selectedLineup ? 'inline-block' : 'none'};
   top: 85%;
   left: 45%;
@@ -256,4 +257,4 @@ const GoalKeeper = BasicPlayer.extend`
 
 
 
-export {Player1, Player2, Player3, Player4, Player5, Player6, Player7, Player8, Player9, Player10, GoalKeeper };
+export {Player1, Player2, Player3, Player4, Player5, Player6, Player7, Player8, Player9, Player10, Player11 };
